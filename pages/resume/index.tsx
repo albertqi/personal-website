@@ -29,11 +29,11 @@ const Resume: NextPage<Props> = ({ coursework, experiences }) => {
                 <meta property="og:title" content="Albert Qi - Resume" />
                 <meta name="description" content="Learn more about my education and experience!" />
             </Head>
-            <div className="p-16 w-2/3 m-auto space-y-16">
+            <div className="p-8 md:p-16 space-y-8 md:space-y-16 md:w-11/12 lg:w-2/3 m-auto">
                 <div className="space-y-8">
                     <div className="space-y-4">
                         <h1 className="text-4xl font-black text-dark uppercase">Education</h1>
-                        <div className="bg-primary h-1 w-1/12" />
+                        <div className="bg-primary h-1 w-20" />
                     </div>
                     <div className="space-y-2">
                         <h3 className="text-xl text-dark font-semibold">Harvard University</h3>
@@ -54,24 +54,27 @@ const Resume: NextPage<Props> = ({ coursework, experiences }) => {
                 <div className="space-y-8">
                     <div className="space-y-4">
                         <h1 className="text-4xl font-black text-dark uppercase">Experience</h1>
-                        <div className="bg-primary h-1 w-1/12" />
+                        <div className="bg-primary h-1 w-20" />
                     </div>
                     {experiences.map((experience) => (
-                        <div key={experience.id} className="grid grid-cols-3 gap-8">
+                        <div key={experience.id} className="grid sm:grid-cols-3 gap-2 sm:gap-8">
                             <div className="space-y-2">
                                 <h3 className="text-xl text-dark font-semibold">{experience.company}</h3>
-                                <p className="text-dark font-light">{experience.date}</p>
+                                <p className="hidden sm:block text-dark font-light">{experience.date}</p>
                             </div>
-                            <div className="space-y-2 col-span-2">
-                                <h2 className="text-xl text-dark">{experience.position}</h2>
+                            <div className="space-y-2 sm:col-span-2">
+                                <div>
+                                    <h2 className="text-lg sm:text-xl text-dark">{experience.position}</h2>
+                                    <p className="block sm:hidden text-dark font-light">{experience.date}</p>
+                                </div>
                                 <ul>
                                     {experience.description.map((description) => (
                                         <li key={description} className="text-dark font-light">- {description}</li>
                                     ))}
                                 </ul>
-                                <div>
+                                <p>
                                     <a className="text-primary hover:text-primary-shade font-light" href={experience.link}>{experience.link}</a>
-                                </div>
+                                </p>
                             </div>
                         </div>
                     ))}

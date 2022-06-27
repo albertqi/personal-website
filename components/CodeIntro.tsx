@@ -4,7 +4,8 @@ const CodeIntro = () => {
     public String name = "Albert Qi";
     public int age = LocalDate.now().getYear() - 2003;
     public String[] skills =
-        {"Java", "JavaScript", "TypeScript", "Python", "C++", "OCaml",
+        {"Java", "JavaScript", "TypeScript",
+        "Python", "C++", "OCaml",
         "React", "Angular", "Flask", "Firebase", "Swift",
         "PostgreSQL", "TailwindCSS", "HTML"};
 }`;

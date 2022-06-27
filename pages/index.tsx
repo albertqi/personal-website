@@ -10,8 +10,8 @@ const Home: NextPage = () => {
                 <meta property="og:title" content="Albert Qi" />
                 <meta name="description" content="Computer Science, Statistics @ Harvard" />
             </Head>
-            <div className="grid grid-cols-2 h-screen absolute top-0 w-screen -z-10">
-                <div className="space-y-8 my-auto pl-36">
+            <div className="grid lg:grid-cols-2 h-screen absolute top-0 w-screen -z-10 text-center sm:text-left">
+                <div className="space-y-8 mx-auto lg:mx-0 my-auto px-4 lg:pl-12 xl:pl-36">
                     <div className="space-y-0.5">
                         <h3 className="text-2xl font-extralight text-dark lowercase">Hi there! I&apos;m</h3>
                         <h1 className="text-6xl font-black text-dark uppercase">Albert Qi</h1>
@@ -29,10 +29,10 @@ const Home: NextPage = () => {
                         </a>
                     </div>
                 </div>
-                <div className="my-auto flex justify-end px-36">
+                <div className="hidden my-auto lg:flex justify-end pr-12 xl:pr-36">
                     <CodeIntro />
                 </div>
-                <div className="absolute bg-primary h-screen w-full clipped-home -z-20" />
+                <div className="hidden lg:block absolute bg-primary h-screen w-full clipped-home -z-20" />
             </div>
         </>
     );
