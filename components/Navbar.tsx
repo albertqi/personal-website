@@ -6,6 +6,9 @@ const Navbar = () => {
             <Link href="/">
                 <a className="lowercase text-primary hover:text-primary-shade bg-transparent">Home</a>
             </Link>
+            <Link href="/about-me">
+                <a className="lowercase text-primary hover:text-primary-shade bg-transparent">About Me</a>
+            </Link>
             <Link href="/resume">
                 <a className="lowercase text-primary hover:text-primary-shade bg-transparent">Resume</a>
             </Link>
