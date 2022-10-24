@@ -8,6 +8,6 @@ body {
 
 @layer utilities {
     .clipped-home {
-        clip-path: polygon(75% 0, 100% 0, 100% 100%, 90% 100%);
+        clip-path: polygon(65% 0, 100% 0, 100% 100%, 80% 100%);
     }
 }
