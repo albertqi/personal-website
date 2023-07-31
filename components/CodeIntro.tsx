@@ -3,11 +3,12 @@ const CodeIntro = () => {
 `public class Albert {
     public String name = "Albert Qi";
     public int age = LocalDate.now().getYear() - 2003;
-    public String[] skills =
-        {"Java", "JavaScript", "TypeScript",
-        "Python", "C++", "OCaml",
-        "React", "Angular", "Flask", "Firebase", "Swift",
-        "PostgreSQL", "TailwindCSS", "HTML"};
+    public String[] skills = {
+        "Python", "C/C++", "Java",
+        "JavaScript", "TypeScript", "Swift",
+        "R", "Assembly", "OCaml",
+        "React", "Angular", "SQL", "HTML/CSS",
+    };
 }`;
 
     return (

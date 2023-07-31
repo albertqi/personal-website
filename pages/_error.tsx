@@ -14,7 +14,7 @@ const Error: NextPage<Props> = ({ statusCode }) => {
                 <meta property="og:title" content={`Albert Qi - ${statusCode ?? "Error"}`} />
                 <meta name="description" content={`Error${statusCode ? ` ${statusCode}` : ""}`} />
             </Head>
-            <div className="absolute w-screen h-screen left-0 top-0 grid place-items-center -z-10 p-8">
+            <div className="w-screen h-full flex-1 grid place-items-center p-8">
                 <div className="text-dark text-left space-y-6">
                     <h1 className="text-8xl font-black">{statusCode ?? ":("}</h1>
                     <p className="font-light text-lg">Oops! Something went wrong.</p>
