@@ -38,8 +38,8 @@ const Resume: NextPage<Props> = ({ coursework, experiences }) => {
                     <div className="space-y-2">
                         <h3 className="text-xl text-dark font-semibold">Harvard University</h3>
                         <div className="text-dark font-light">
-                            <p>Aug 2021 - May 2025</p>
-                            <p>- A.B. in Computer Science and Statistics</p>
+                            <p>- S.M. in Computer Science (Feb 2024 - May 2025)</p>
+                            <p>- A.B. in Computer Science and Statistics (Aug 2021 - May 2025)</p>
                         </div>
                     </div>
                     <div className="space-y-2">
