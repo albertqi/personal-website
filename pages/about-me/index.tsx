@@ -13,7 +13,7 @@ const AboutMe: NextPage = () => {
             </Head>
             <div className="w-screen h-full flex-1 grid lg:grid-cols-3">
                 <div className="hidden lg:col-span-1 bg-primary lg:flex items-center justify-center">
-                    <div className="w-1/2 rounded-full overflow-hidden outline outline-4 outline-white flex items-center justify-center">
+                    <div className="w-1/2 rounded-full overflow-hidden outline outline-1.5 outline-white flex items-center justify-center">
                         <Image
                             src={profilePicture}
                             alt="Picture of Albert Qi"
